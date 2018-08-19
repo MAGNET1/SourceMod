@@ -1,0 +1,573 @@
+"Phrases"
+{
+	"End action"
+	{
+		"tr"		"Menüye girmek için önce işleminizi sonlandırın..."
+	}
+
+	"Couldn't receive"
+	{
+		"tr"		"Üzgünüz, ancak veriler alınamadı"
+	}
+
+	"Ask server"
+	{
+		"tr"		"Veritabanında bir sorun olabilir, sunucu yöneticisine yazınız..."
+	}
+
+	"MainMenu_Create"
+	{
+		"tr"		"Mail Kutusu Oluştur"
+	}
+
+	"MainMenu_Announcements"
+	{
+		"tr"		"Duyurular"
+	}
+
+	"MainMenu_New Message"
+	{
+		"tr"		"Yeni mesaj"
+	}
+
+	"MainMenu_Open mailbox"
+	{
+		"tr"		"Mail Kutusunu Aç"
+	}
+
+	"BrowseAnouncements_Announcements"
+	{
+		"tr"		"Duyurular"
+	}
+
+	"BrowseAnouncements_No announcements"
+	{
+		"tr"		"Duyuru bulunmamaktadır. Sonra tekrar bakınız."
+	}
+
+	"BackButton"
+	{
+		"tr"		"Geri"
+	}
+
+	"Mailbox not exists"
+	{
+		"tr"		"Bu Mail Kutusu silinmiş..."
+	}
+
+	"DisplayBoxOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:d}"
+		"tr"		"Mail Kutusu: İsim: {1}\nTür: {2}\nAçıklama: {3}\nMesajlar: {4}/{5}\nNe yapmak istiyorsun?"
+	}
+
+	"DisplayBoxOptions_Title HIDDEN"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"tr"		"Mail Kutusu: İsim: {1}\nTür: {2}\nAçıklama: {3}\nMesajlar: GİZLİ\nNe yapmak istiyorsun?"
+	}
+
+	"DisplayBoxOptions_Login"
+	{
+		"tr"		"Giriş"
+	}
+
+	"DisplayBoxOptions_Show messages"
+	{
+		"tr"		"Mesajları göster"
+	}
+
+	"DisplayBoxOptions_Change description"
+	{
+		"tr"		"Açıklamayı değiştir"
+	}
+
+	"DisplayBoxOptions_Change password"
+	{
+		"tr"		"Şifreyi değiştir"
+	}
+
+	"DisplayBoxOptions_Delete mailbox"
+	{
+		"tr"		"Mail Kutusunu sil"
+	}
+
+
+	"DeleteMailbox_Confirmation"
+	{
+		"tr"		"Gerçekten Mail Kutusunu silmek istiyor musunuz? ({firered}%s)\nTüm mesajlar silinecektir.\nKabul ediyor musunuz?"
+	}
+
+	"DeleteMailbox_Yes"
+	{
+		"tr"		"Evet, bu Mail Kutusunu silmek istiyorum."
+	}
+
+	"DeleteMailbox_No"
+	{
+		"tr"		"Hayır, fikrimi değiştirdim."
+	}
+
+	"Change_Information"
+	{
+		"tr"		"Şimdi, yeni %s sohbete yazınız."
+	}
+
+	"Password_Type"
+	{
+		"tr"		"Mail Kutusu türünü {firered}%s{default} sohbete yazınız:"
+	}
+
+	"BrowseMessages_Title_List"
+	{
+		"tr"		"Mesaj listesi:"
+	}
+
+	"BrowseMessages_Title_List_No Messages"
+	{
+		"tr"		"Mesaj yok...\n"
+	}
+
+	"Message deleted"
+	{
+		"tr"		"Bu mesaj az önce silindi..."
+	}
+
+	"MessageOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"tr"		"Mail Kutusu: {1}\nBaşlık: {2}\nSahibi: {3}\nTarih: {4}\n \n"
+	}
+
+	"MessageOptions_Show_message"
+	{
+		"tr"		"Mesajı göster"
+	}
+
+	"MessageOptions_Delete"
+	{
+		"tr"		"Sil"
+	}
+
+	"MessageOptions_Show player info"
+	{
+		"tr"		"Oyuncu bilgisini göster"
+	}
+
+	"MessageOptions_Back"
+	{
+		"tr"		"Mesaj listesine geri dön"
+	}
+
+	"ShowPlayerInfo_Title"
+	{
+		"#format"	"{1:s},{2:s}"
+		"tr"		"İsim: {1}\nSteamID: {2}\n \n"
+	}
+
+	"ShowMessage_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"tr"		"Mail Kutusu: {1}\nBaşlık: {2}\nSahibi: {3}\n \n{4}"
+	}
+
+	"DeleteMessage_Confirmation_Title"
+	{
+		"tr"		"Bu mesajı gerçekten silmek istiyor musunuz?"
+	}
+
+	"DeleteMessage_Confirmation_Yes"
+	{
+		"tr"		"Evet, silmek istiyorum."
+	}
+
+	"DeleteMessage_Confirmation_No"
+	{
+		"tr"		"Hayır, fikrimi değiştirdim."
+	}
+
+	"CreatingNewMailbox_Someone else"
+	{
+		"tr"		"Üzgünüz, şu an başka bir oyuncu Mail Kutusu oluşturuyor."
+	}
+
+	"CreatingNewMailbox_Max"
+	{
+		"tr"		"Maksimum Mail Kutusu sayısına ulaştınız {purple}(%d)"
+	}
+
+	"CreatingNewMailbox_Title"
+	{
+		"tr"		"Mail Kutusu Oluşturucu\nYeni Mail Kutusu oluşturmak istiyor musunuz?\nİptal ettikten sonra, sohbetiniz engellenecektir.\nYazacağınız her şey, eklentiye yönlendirilecektir.\nMail Kutularının sayısı:: %d/%d"
+	}
+
+	"CreatingNewMailbox_Yes"
+	{
+		"tr"		"Evet, yeni Mail Kutusu oluşturacağım."
+	}
+
+	"CreatingNewMailbox_No"
+	{
+		"tr"		"Hayır, istemiyorum."
+	}
+
+	"CreatingNewMailbox_No_Inform"
+	{
+		"tr"		"Yeni Mail Kutusu oluşturmamaya karar verdin."
+	}
+
+	"BrowseMailboxes_Title"
+	{
+		"tr"		"Aktif Mail Kutularının listesi:"
+	}
+
+	"BrowseMailboxes_Title_No mailboxes"
+	{
+		"tr"		"Üzgünüm, aktif Mail Kutusu yok."
+	}
+
+	"CreateMessage_Box full"
+	{
+		"tr"		"Mail kutusu {firered}%s{default} dolu..."
+	}
+
+	"CreateMessage_Title"
+	{
+		"tr"		"%s Mail Kutusuna yeni bir mesaj yazmak üzeresiniz.\nMaksimum 50 karakter 5 satır olmalıdır.\nMesajınızı tırnak işareti içinde yazın.\nÖrnek: \"Bir hileyi bildirmek istiyorum\"\nENTER tuşuna basarak, yeni satır oluşturabilirsiniz.\nBu işlemleri yaparken, mesajlarınızı kimse göremez.\nBu mesajı oluşturmak istiyor musunuz?"
+	}
+
+	"CreateMessage_Yes"
+	{
+		"tr"		"Evet, mesajı oluşturmak istiyorum."
+	}
+
+	"CreateMessage_No"
+	{
+		"tr"		"Hayır, istemiyorum."
+	}
+
+
+	"CreateMessage_Inform"
+	{
+		"tr"		"Şimdi mesajınızın konusunu sohbete yazın. Endişelenme - kimse görmeyecek :)"
+	}
+
+	"Entered value"
+	{
+		"tr"		"{greyblue}Girilen değer: {green}%s"
+	}
+
+	"CreateMessage_TooLong"
+	{
+		"tr"		"Mesajınız / başlığınız çok uzun! Tekrar deneyin (En fazla {darkred}%d{default} karakter)"
+	}
+
+	"CreateMessage_Restricted characters"
+	{
+		"tr"		"Mesajınız kısıtlanmış karakterler içeriyor!"
+	}
+
+	"CreateMessage_Max lines 1"
+	{
+		"tr"		"Maksimum satır sayısına ulaştınız!"
+	}
+
+	"CreateMessage_Max lines 2"
+	{
+		"tr"		"Değişiklikleri yapmak için satırı silebilirsiniz."
+	}
+
+	"CreateMessage_MessageMenu_Send"
+	{
+		"tr"		"Mesaj gönder."
+	}
+
+	"CreateMessage_MessageMenu_Delete line"
+	{
+		"tr"		"Son satırı sil"
+	}
+
+	"CreateMessage_MessageMenu_Cancel"
+	{
+		"tr"		"Mesajı oluşturmayı iptal et"
+	}
+
+	"CreateMessage_MessageMenu_Correct"
+	{
+		"tr"		"Doğru başlık"
+	}
+
+	"CreateMessage_MessageMenu_Title"
+	{
+		"#format"	"{1:s},{2:d},{3:s},{4:s}"
+		"tr"		"{1} için | Satır: {2}/5\nBaşlık: {3}\n{4}\n\n"
+	}
+
+	"CreateMessage_Inform 1"
+	{
+		"tr"		"{violet}5{default} satırda {purple}%d{default} girdiniz."
+	}
+
+	"CreateMessage_Inform 2"
+	{
+		"tr"		"Başka bir tane eklemek isterseniz, önce sohbete yazın."
+	}
+
+	"CreateMessage_Inform 3"
+	{
+		"tr"		"Menü kaybolursa, oluşturmayı iptal etmek için: {darkred}\"abort\""
+	}
+
+	"CreateMessage_Someone filled"
+	{
+		"tr"		"Üzgünüz, ama birisi bu Mail Kutusunu daha önce doldurdu..."
+	}
+
+	"CreateMessage_Success"
+	{
+		"tr"		"Mesaj {green}başarıyla{default} gönderildi :)"
+	}
+
+	"CreateMessage_Error"
+	{
+		"tr"		"Bir şeyler ters gitti... mesajınız yollanmadı."
+	}
+
+	"CreateMessage_Canceled"
+	{
+		"tr"		"Mesajı gönderme iptal edildi ..."
+	}
+
+	"CreateMessage_Empty"
+	{
+		"tr"		"Boş mesaj gönderemezsin ..."
+	}
+
+	"CreateMessage_Aborted"
+	{
+		"tr"		"Yeni mesaj oluşturuldu..."
+	}
+
+	"CreateMessage_Correct 1"
+	{
+		"tr"		"Başlığını şimdi düzeltebilirsin."
+	}
+
+	"CreateMessage_Correct 2"
+	{
+		"tr"		"Sadece sohbete yazın :)"
+	}
+
+	"NewMessage 1"
+	{
+		"tr"		"Mail Kutunuzda yeni bir mesajınız var: {firered}%s{default}!"
+	}
+
+	"NewMessage 2"
+	{
+		"tr"		"{mediumgreen}Sahibi:{lightgreen} %s,{mediumgreen} Başlık:{lightgreen} %s"
+	}
+
+	"DeleteMessage_Success"
+	{
+		"tr"		"Mesaj silindi"
+	}
+
+	"DeleteMessage_Error"
+	{
+		"tr"		"Bazı bilinmeyen sorunlar oluştu..."
+	}
+
+	"DeleteMailbox_Succcess"
+	{
+		"tr"		"Mail Kutusu silindi..."
+	}
+
+	"Login_Success"
+	{
+		"tr"		"Başarıyla giriş yapıldı!"
+	}
+
+	"Login_Failure"
+	{
+		"tr"		"Yanlış şifre..."
+	}
+
+	"CreateMailbox_EntryInformation 1"
+	{
+		"tr"		"Şimdi, sohbete yeni Mail Kutusu adını yazın"
+	}
+
+	"CreateMailbox_EntryInformation 2"
+	{
+		"tr"		"Maksimum {darkred}15{default} karakter olmalıdır."
+	}
+
+	"CreateMailbox_Inform_Abort"
+	{
+		"tr"		"Oluşturma işlemini iptal etmek için, sohbete yazın: {darkred}abort"
+	}
+
+	"CreateMailbox_Abort 1"
+	{
+		"tr"		"Yanlış bir şey yazdın ..."
+	}
+
+	"CreateMailbox_Abort general"
+	{
+		"tr"		"Yeni Mail Kutusu oluşturuldu..."
+	}
+
+	"CreateMailbox_Abort_Already exists"
+	{
+		"tr"		"Üzgünüz, ama böyle bir Mail Kutusu zaten var!"
+	}
+
+	"CreateMailbox_Abort_Max characters"
+	{
+		"tr"		"Karakter sınırını aştınız"
+	}
+
+	"CreateMailbox_Enter_Description 1"
+	{
+		"tr"		"Mail Kutunuz için kısa bir açıklama girmenin zamanı geldi."
+	}
+
+	"CreateMailbox_Enter_Description 2"
+	{
+		"tr"		"Maksimum {darkred}30{default} karakter olmalıdır."
+	}
+
+	"CreateMailbox_Enter_Password 1"
+	{
+		"tr"		"Şimdi, şifrenizi giriniz (maksimum {darkred}20{default} karakter)"
+	}
+
+	"CreateMailbox_Enter_Password 2"
+	{
+		"tr"		"Endişelenme - kimse onu seçmeyecek"
+	}
+
+	"CreateMailbox_Enter_Capacity 1"
+	{
+		"tr"		"Başarılı! Şimdi Mail Kutunuzun kapasitesini belirtin."
+	}
+
+	"CreateMailbox_Enter_Capacity 2"
+	{
+		"tr"		"Her Mail Kutusu en çok {darkred}%d{default} mesaja sahip olabilir."
+	}
+
+	"CreateMailbox_Enter_Type 1"
+	{
+		"tr"		"Neredeyse geldik! Son şey Mail Kutusunun türünü belirtmek"
+	}
+
+	"CreateMailbox_Enter_Type 2"
+	{
+		"tr"		"Tür '{green}%d{default}', Mail Kutunuz herkese açık olarak ayarlanır. Tüm oyunculardan {lightgreen}mesaj alır."
+	}
+	
+	"CreateMailbox_Enter_Type 3"
+	{
+		"tr"		"Tür '{green}%d{default}', Mail Kutunuz sınırlı olarak ayarlanır. {lightgreen}Sadece VIP'ler{default} mesaj gönderebilecektir."
+	}
+
+	"CreateMailbox_Enter_Type 4"
+	{
+		"tr"		"Tür '{green}%d{default}', bir duyuru kutusu oluşturur. {lightgreen}Tüm oyuncular{default} okuyabilecektir, ancak {lightgreen}sadece admin{default} buraya mesajlar gönderebilir."
+	}	
+
+	"CreateMailbox_Confirmation_Info 1"
+	{
+		"tr"		"Şimdi, yeni bir Mail Kutusu oluşturmayı onayla veya iptal et."
+	}
+
+	"CreateMailbox_Confirmation_Info 2"
+	{
+		"tr"		"Menü kaybolursa, iptal etmek için sohbete '{darkred}abort{default}' yazınız."
+	}
+
+	"CreateMailbox_Confirmation_Menu_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"tr"		"İsim: {1}\nAçıklama: {2}\nŞifre: {3}\nKapasite: {4}\nGörünürlük: {5}\nBunu oluşturmak istiyor musunuz?"
+	}
+
+	"CreateMailbox_Yes"
+	{
+		"tr"		"Evet, oluştur."
+	}
+
+	"CreateMailbox_No"
+	{
+		"tr"		"Hayır, iptal et."
+	}
+
+	"CreateMailbox_Resign"
+	{
+		"tr"		"Yeni Mail Kutusu oluşturmamaya karar verdiniz."
+	}
+
+	"CreateMailbox_Successfully"
+	{
+		"tr"		"Yeni Mail Kutusu başarıyla oluşturuldu: {firered}%s{default}!"
+	}
+
+	"ChangeMailbox_TooLong 1"
+	{
+		"#format"	"{1:s},{2:d}"
+		"tr"		"Üzgünüm, ama {1} çok uzun (maksimum {2} karakter)"
+	}
+
+	"ChangeMailbox_TooLong 2"
+	{
+		"tr"		"{fireered}%s{default} Mail Kutusunun değiştirilmesi iptal edildi..."
+	}
+
+	"ChangeMailbox_Already exists 1"
+	{
+		"tr"		"Üzgünüz, ama böyle bir Mail Kutusu zaten var!"
+	}
+
+	"ChangeMailbox_Already exists 2"
+	{
+		"tr"		"Mail Kutusu şifresi / açıklaması değiştiriliyor ..."
+	}
+
+	"ChangeMailbox_Already entered 1"
+	{
+		"tr"		"Zaten bir şey girdiniz ..."
+	}
+
+	"ChangeMailbox_Already entered 2"
+	{
+		"tr"		"Kabul et ya da reddet.."
+	}
+
+	"ChangeMailbox_Confirmation_Title"
+	{
+		"tr"		"Yeni %s:\n%s\n \nKabul ediyor musunuz?\n"
+	}
+
+	"ChangeMailbox_Confirmation_Yes"
+	{
+		"tr"		"Evet"
+	}
+
+	"ChangeMailbox_Confirmation_No"
+	{
+		"tr"		"Hayır"
+	}
+
+	"ChangeMailbox_Success_Inform"
+	{
+		"tr"		"Mail Kutunuz {green}%s{default} başarıyla değiştirildi!"
+	}
+
+	"ChangeMailbox_Deny changes"
+	{
+		"tr"		"%s Mail Kutusunu değiştirmemeye karar verdin..."
+	}
+
+}

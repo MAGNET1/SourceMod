@@ -1,0 +1,573 @@
+"Phrases"
+{
+	"End action"
+	{
+		"en"		"Zeby wejsc do menu, zakoncz poprzednia akcje..."
+	}
+
+	"Couldn't receive"
+	{
+		"en"		"Niestety, dane nie mogly zostac pobrane..."
+	}
+
+	"Ask server"
+	{
+		"en"		"Spytaj sie admina, czy nie ma problemow z baza danych..."
+	}
+
+	"MainMenu_Create"
+	{
+		"en"		"Stworz nowa skrzynke"
+	}
+
+	"MainMenu_Announcements"
+	{
+		"en"		"Ogloszenia"
+	}
+
+	"MainMenu_New Message"
+	{
+		"en"		"Nowa wiadomosc"
+	}
+
+	"MainMenu_Open mailbox"
+	{
+		"en"		"Otworz skrzynke"
+	}
+
+	"BrowseAnouncements_Announcements"
+	{
+		"en"		"Ogloszenia"
+	}
+
+	"BrowseAnouncements_No announcements"
+	{
+		"en"		"Brak ogloszen...wpadnij tu pozniej!"
+	}
+
+	"BackButton"
+	{
+		"en"		"Wroc"
+	}
+
+	"Mailbox not exists"
+	{
+		"en"		"Ta skrzynka juz nie istnieje..."
+	}
+
+	"DisplayBoxOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:d}"
+		"en"		"Nazwa: {1}\nRodzaj: {2}\nOpis: {3}\nWiadomosci: {4}/{5}\nCo chcesz zrobic?"
+	}
+
+	"DisplayBoxOptions_Title HIDDEN"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"Nazwa: {1}\nRodzaj: {2}\nOpis: {3}\nWiadomosci: HIDDEN\nCo chcesz zrobic?"
+	}
+
+	"DisplayBoxOptions_Login"
+	{
+		"en"		"Zaloguj"
+	}
+
+	"DisplayBoxOptions_Show messages"
+	{
+		"en"		"Pokaz liste wiadomosci"
+	}
+
+	"DisplayBoxOptions_Change description"
+	{
+		"en"		"Zmien opis"
+	}
+
+	"DisplayBoxOptions_Change password"
+	{
+		"en"		"Zmien haslo"
+	}
+
+	"DisplayBoxOptions_Delete mailbox"
+	{
+		"en"		"Usun skrzynke"
+	}
+
+
+	"DeleteMailbox_Confirmation"
+	{
+		"en"		"Czy naprawde chcesz usunac skrzynke {firered}%s?\nWszystkie wiadomosci zostana utracone\nCzy chcesz kontunuowac?"
+	}
+
+	"DeleteMailbox_Yes"
+	{
+		"en"		"Tak, usun te skrzynke"
+	}
+
+	"DeleteMailbox_No"
+	{
+		"en"		"Nie, zmienilem zdanie"
+	}
+
+	"Change_Information"
+	{
+		"en"		"Wprowadz nowe(y) %s do okna czatu:"
+	}
+
+	"Password_Type"
+	{
+		"en"		"Wprowadz haslo do skrzynki {firered}%s{default} do okna czatu:"
+	}
+
+	"BrowseMessages_Title_List"
+	{
+		"en"		"Lista wiadomosci:"
+	}
+
+	"BrowseMessages_Title_List_No Messages"
+	{
+		"en"		"Brak wiadomosci...\n"
+	}
+
+	"Message deleted"
+	{
+		"en"		"Wiadomosc zostala usunieta..."
+	}
+
+	"MessageOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"Skrzynka: {1}\nTytul: {2}\nAutor: {3}\nData: {4}\n \n"
+	}
+
+	"MessageOptions_Show_message"
+	{
+		"en"		"Pokaz wiadomosc"
+	}
+
+	"MessageOptions_Delete"
+	{
+		"en"		"Usun wiadomosc"
+	}
+
+	"MessageOptions_Show player info"
+	{
+		"en"		"Informacje o graczu"
+	}
+
+	"MessageOptions_Back"
+	{
+		"en"		"Powrot do listy"
+	}
+
+	"ShowPlayerInfo_Title"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Nazwa: {1}\nSteamID: {2}\n \n"
+	}
+
+	"ShowMessage_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"Skrzynka: {1}\nTytul: {2}\nAutor: {3}\n \n{4}"
+	}
+
+	"DeleteMessage_Confirmation_Title"
+	{
+		"en"		"Czy naprawde chcesz usunac te wiadomosc?"
+	}
+
+	"DeleteMessage_Confirmation_Yes"
+	{
+		"en"		"Tak, usun ja"
+	}
+
+	"DeleteMessage_Confirmation_No"
+	{
+		"en"		"Nie, zmienilem zdanie"
+	}
+
+	"CreatingNewMailbox_Someone else"
+	{
+		"en"		"Niestety, aktualnie ktos inny tworzy skrzynke..."
+	}
+
+	"CreatingNewMailbox_Max"
+	{
+		"en"		"Osiagnieto maksymalna ilosc skrzynek {purple}(%d)"
+	}
+
+	"CreatingNewMailbox_Title"
+	{
+		"en"		"Krator skrzynek\nCzy chcesz stworzyc nowa skrzynke?\nPo zatwierdzeniu Twoj czat zostanie zablokowany\nWszystko co wpiszesz zostanie przekazane do pluginu\nLiczba skrzynek: %d/%d"
+	}
+
+	"CreatingNewMailbox_Yes"
+	{
+		"en"		"Tak, chce stworzyc nowa skrzynke"
+	}
+
+	"CreatingNewMailbox_No"
+	{
+		"en"		"Nie, rezygnuje"
+	}
+
+	"CreatingNewMailbox_No_Inform"
+	{
+		"en"		"Zdecydowales sie nie tworzyc nowej skrzynki"
+	}
+
+	"BrowseMailboxes_Title"
+	{
+		"en"		"Lista aktywnych skrzynek:"
+	}
+
+	"BrowseMailboxes_Title_No mailboxes"
+	{
+		"en"		"Brak aktywnych skrzynek..."
+	}
+
+	"CreateMessage_Box full"
+	{
+		"en"		"Skrzynka {firered}%s{default} jest pelna..."
+	}
+
+	"CreateMessage_Title"
+	{
+		"en"		"Za chwile wyslesz wiadomosc do %s\nMoze ona zawierac do 5 linii po 50 znakow kazda\nPo prostu napisz tresc na czacie\nPrzyklad: \"Chce zlozyc skarge na gracza\"\nZa kazdym razem, kiedy nacisniesz ENTER, plugin stworzy nowa linie\nPodczas tego procesu nikt nie bedzie widzial co piszesz\nCzy chcesz stworzyc nowa wiadomosc?"
+	}
+
+	"CreateMessage_Yes"
+	{
+		"en"		"Tak, chce stworzyc nowa wiadomosc"
+	}
+
+	"CreateMessage_No"
+	{
+		"en"		"Nie, rezygnuje"
+	}
+
+
+	"CreateMessage_Inform"
+	{
+		"en"		"Teraz napisz na czacie temat Twojej wiadomosci. Nie martw sie - nikt tego nie zobaczy :)"
+	}
+
+	"Entered value"
+	{
+		"en"		"{greyblue}Wprowadzona wartosc: {green}%s"
+	}
+
+	"CreateMessage_TooLong"
+	{
+		"en"		"Twoja wiadomosc/tytul jest za dlugi! Sproboj ponownie (Max {darkred}%d{default} znakow)"
+	}
+
+	"CreateMessage_Restricted characters"
+	{
+		"en"		"Twoja wiadomosc zawiera zabronione znaki!"
+	}
+
+	"CreateMessage_Max lines 1"
+	{
+		"en"		"Osiagnieto maksymalna liczbe linii!"
+	}
+
+	"CreateMessage_Max lines 2"
+	{
+		"en"		"Mozesz usunac tresc aby naniesc poprawki, albo po prostu ja wyslac!"
+	}
+
+	"CreateMessage_MessageMenu_Send"
+	{
+		"en"		"Wyslij wiadomosc"
+	}
+
+	"CreateMessage_MessageMenu_Delete line"
+	{
+		"en"		"Usun ostatnia linie"
+	}
+
+	"CreateMessage_MessageMenu_Cancel"
+	{
+		"en"		"Anuluj tworzenie wiadomosci"
+	}
+
+	"CreateMessage_MessageMenu_Correct"
+	{
+		"en"		"Popraw tytul"
+	}
+
+	"CreateMessage_MessageMenu_Title"
+	{
+		"#format"	"{1:s},{2:d},{3:s},{4:s}"
+		"en"		"Do: {1} | Linie: {2}/5\nTytul: {3}\n{4}\n\n"
+	}
+
+	"CreateMessage_Inform 1"
+	{
+		"en"		"Wprowadzono{purple}%d{default} z {violet}5{default} linii"
+	}
+
+	"CreateMessage_Inform 2"
+	{
+		"en"		"Jesli chcesz dodac kolejna, po prostu wprowadz ja do czatu"
+	}
+
+	"CreateMessage_Inform 3"
+	{
+		"en"		"Gdyby menu znikneli, aby przerwac tworzenie wpisz {darkred}\"abort\""
+	}
+
+	"CreateMessage_Someone filled"
+	{
+		"en"		"Wybacz, ale ktos wlasnie zapelnil skrzynke..."
+	}
+
+	"CreateMessage_Success"
+	{
+		"en"		"Wiadomosc zostala wyslana {green}pomyslnie{default} :)"
+	}
+
+	"CreateMessage_Error"
+	{
+		"en"		"Cos poszlo nie tak... Twoja wiadomosc nie zostala wyslana"
+	}
+
+	"CreateMessage_Canceled"
+	{
+		"en"		"Wysylanie wiadomosci zostalo wczesniej anulowane..."
+	}
+
+	"CreateMessage_Empty"
+	{
+		"en"		"Nie mozesz wyslac pustej wiadomosci..."
+	}
+
+	"CreateMessage_Aborted"
+	{
+		"en"		"Tworzenie nowej wiadomosci zostalo przerwane..."
+	}
+
+	"CreateMessage_Correct 1"
+	{
+		"en"		"Mozesz teraz poprawic tytul wiadomosci"
+	}
+
+	"CreateMessage_Correct 2"
+	{
+		"en"		"Po prostu wprowadz go do czatu :)"
+	}
+
+	"NewMessage 1"
+	{
+		"en"		"Masz nowa wiadomosc w skrzynce {firered}%s{default}!"
+	}
+
+	"NewMessage 2"
+	{
+		"en"		"{mediumgreen}Autor:{lightgreen} %s,{mediumgreen} Tytul:{lightgreen} %s"
+	}
+
+	"DeleteMessage_Success"
+	{
+		"en"		"Wiadomosc usunieta"
+	}
+
+	"DeleteMessage_Error"
+	{
+		"en"		"Wystapil nieznany problem..."
+	}
+
+	"DeleteMailbox_Succcess"
+	{
+		"en"		"Skrzynka usunieta..."
+	}
+
+	"Login_Success"
+	{
+		"en"		"Zalogowano pomyslnie!"
+	}
+
+	"Login_Failure"
+	{
+		"en"		"Niepoprawne haslo..."
+	}
+
+	"CreateMailbox_EntryInformation 1"
+	{
+		"en"		"Teraz wprowadz nazwe skrzynki do czatu"
+	}
+
+	"CreateMailbox_EntryInformation 2"
+	{
+		"en"		"Maksymalna dlugosc to {darkred}15{default} znakow"
+	}
+
+	"CreateMailbox_Inform_Abort"
+	{
+		"en"		"Jesli chcesz anulowac tworzenie, wpisz po prostu {darkred}abort"
+	}
+
+	"CreateMailbox_Abort 1"
+	{
+		"en"		"Wprowadziles cos niepoprawnie..."
+	}
+
+	"CreateMailbox_Abort general"
+	{
+		"en"		"Tworzenie skrzynki zostalo przerwane..."
+	}
+
+	"CreateMailbox_Abort_Already exists"
+	{
+		"en"		"Taka skrzynka juz istnieje!"
+	}
+
+	"CreateMailbox_Abort_Max characters"
+	{
+		"en"		"Przekroczono limit znakow!"
+	}
+
+	"CreateMailbox_Enter_Description 1"
+	{
+		"en"		"Czas na wprowadzenie krotkiego opisu skrzynki"
+	}
+
+	"CreateMailbox_Enter_Description 2"
+	{
+		"en"		"Moze on miec maksymalnie {darkred}30{default} znakow"
+	}
+
+	"CreateMailbox_Enter_Password 1"
+	{
+		"en"		"Teraz wprowadz haslo (max {darkred}20{default} znakow)"
+	}
+
+	"CreateMailbox_Enter_Password 2"
+	{
+		"en"		"Nie martw sie - nikt tego nie zobaczy :)"
+	}
+
+	"CreateMailbox_Enter_Capacity 1"
+	{
+		"en"		"Dobra robota! Teraz okresl pojemnosc skrzynki"
+	}
+
+	"CreateMailbox_Enter_Capacity 2"
+	{
+		"en"		"Kazda skrzynka moze pomiescic maksymalnie {darkred}%d{default} wiadomosci"
+	}
+
+	"CreateMailbox_Enter_Type 1"
+	{
+		"en"		"Prawie skonczylismy! Ostatnia rzecza jest okreslenie rodzaju skrzynki"
+	}
+
+	"CreateMailbox_Enter_Type 2"
+	{
+		"en"		"Wpisz '{green}%d{default}', zeby ustawic typ skrzynki na publiczna. {lightgreen}Wszyscy gracze{default} beda mogli wysylac na nia wiadomosci"
+	}
+	
+	"CreateMailbox_Enter_Type 3"
+	{
+		"en"		"Wpisz '{green}%d{default}', zeby ustawic typ skrzynki na limitowana. {lightgreen}Tylko VIPy{default} beda mogly wysylac na nia wiadomosci"
+	}
+
+	"CreateMailbox_Enter_Type 4"
+	{
+		"en"		"Wpisz '{green}%d{default}', zeby ustawic typ skrzynki na ogloszenia. {lightgreen}Wszyscy gracze{default} beda mogli czytac wiadomosci ze skrzynki, ale {lightgreen}tylko admin{default} moze do niej pisac wiadomosci"
+	}	
+
+	"CreateMailbox_Confirmation_Info 1"
+	{
+		"en"		"Sprawdz poprawnosc danych i zdecyduj, czy chcesz stworzyc taka skrzynke"
+	}
+
+	"CreateMailbox_Confirmation_Info 2"
+	{
+		"en"		"Gdyby menu zniknelo, wpisz na czacie '{darkred}abort'"
+	}
+
+	"CreateMailbox_Confirmation_Menu_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"Nazwa: {1}\nOpis: {2}\nHaslo: {3}\nPojemnosc: {4}\nRodzaj: {5}\nCzy chcesz stworzyc taka skrzynke?"
+	}
+
+	"CreateMailbox_Yes"
+	{
+		"en"		"Tak, stworz ja"
+	}
+
+	"CreateMailbox_No"
+	{
+		"en"		"Nie, rezygnuje"
+	}
+
+	"CreateMailbox_Resign"
+	{
+		"en"		"Zdecydowales sie nie tworzyc skrzynki..."
+	}
+
+	"CreateMailbox_Successfully"
+	{
+		"en"		"Pomyslnie stworzono skrzynke {firered}%s{default}!"
+	}
+
+	"ChangeMailbox_TooLong 1"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"Wybacz, ale Twoj(e) {1} jest za dlugie (max {2} znakow)"
+	}
+
+	"ChangeMailbox_TooLong 2"
+	{
+		"en"		"Zmienianie {firered}%s{default} zostalo przerwane..."
+	}
+
+	"ChangeMailbox_Already exists 1"
+	{
+		"en"		"Wybacz, ale taka skrzynka juz istnieje!"
+	}
+
+	"ChangeMailbox_Already exists 2"
+	{
+		"en"		"Zmiana hasla/opisu skrzynki zostalo przerwane..."
+	}
+
+	"ChangeMailbox_Already entered 1"
+	{
+		"en"		"Przed chwila cos juz wprowadziles..."
+	}
+
+	"ChangeMailbox_Already entered 2"
+	{
+		"en"		"Zatwierdz lub odrzuc..."
+	}
+
+	"ChangeMailbox_Confirmation_Title"
+	{
+		"en"		"Twoje nowe %s:\n%s\n \nCzy potwiedzasz zmiane?\n"
+	}
+
+	"ChangeMailbox_Confirmation_Yes"
+	{
+		"en"		"Tak"
+	}
+
+	"ChangeMailbox_Confirmation_No"
+	{
+		"en"		"Nie"
+	}
+
+	"ChangeMailbox_Success_Inform"
+	{
+		"en"		"{green}%s{default} zostalo pomyslnie zmienione!"
+	}
+
+	"ChangeMailbox_Deny changes"
+	{
+		"en"		"Zdecydowales sie nie zmieniac %s skrzynki..."
+	}
+
+}

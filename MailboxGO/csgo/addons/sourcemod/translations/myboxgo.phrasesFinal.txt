@@ -1,0 +1,573 @@
+"Phrases"
+{
+	"End action"
+	{
+		"en"		"To enter the menu, end making your action first..."
+	}
+
+	"Couldn't receive"
+	{
+		"en"		"Sorry, but the data couldn't have been received"
+	}
+
+	"Ask server"
+	{
+		"en"		"Ask your server admin if there's something wrong with the database..."
+	}
+
+	"MainMenu_Create"
+	{
+		"en"		"Create new mailbox"
+	}
+
+	"MainMenu_Announcements"
+	{
+		"en"		"Announcements"
+	}
+
+	"MainMenu_New Message"
+	{
+		"en"		"New message"
+	}
+
+	"MainMenu_Open mailbox"
+	{
+		"en"		"Open mailbox"
+	}
+
+	"BrowseAnouncements_Announcements"
+	{
+		"en"		"Announcements"
+	}
+
+	"BrowseAnouncements_No announcements"
+	{
+		"en"		"There are no announcements... come back later"
+	}
+
+	"BackButton"
+	{
+		"en"		"Back"
+	}
+
+	"Mailbox not exists"
+	{
+		"en"		"This box no longer exists..."
+	}
+
+	"DisplayBoxOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:d}"
+		"en"		"Name: {1}\nType: {2}\nDescription: {3}\nMessages: {4}/{5}\nWhat do u want to do?"
+	}
+
+	"DisplayBoxOptions_Title HIDDEN"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"Name: {1}\nType: {2}\nDescription: {3}\nMessages: HIDDEN\nWhat do u want to do?"
+	}
+
+	"DisplayBoxOptions_Login"
+	{
+		"en"		"Login"
+	}
+
+	"DisplayBoxOptions_Show messages"
+	{
+		"en"		"Show messages list"
+	}
+
+	"DisplayBoxOptions_Change description"
+	{
+		"en"		"Change description"
+	}
+
+	"DisplayBoxOptions_Change password"
+	{
+		"en"		"Change password"
+	}
+
+	"DisplayBoxOptions_Delete mailbox"
+	{
+		"en"		"Delete the mailbox"
+	}
+
+
+	"DeleteMailbox_Confirmation"
+	{
+		"en"		"Do you really want to delete Mailbox {firered}%s?\nAll the messages will be lost\nDo u want to continue?"
+	}
+
+	"DeleteMailbox_Yes"
+	{
+		"en"		"Yes, I want to delete this mailbox"
+	}
+
+	"DeleteMailbox_No"
+	{
+		"en"		"No, I've changed my mind"
+	}
+
+	"Change_Information"
+	{
+		"en"		"Now, type your new %s in the chat"
+	}
+
+	"Password_Type"
+	{
+		"en"		"Type password to mailbox {firered}%s{default} in chat:"
+	}
+
+	"BrowseMessages_Title_List"
+	{
+		"en"		"List of messages:"
+	}
+
+	"BrowseMessages_Title_List_No Messages"
+	{
+		"en"		"No messages...\n"
+	}
+
+	"Message deleted"
+	{
+		"en"		"This message has just been deleted..."
+	}
+
+	"MessageOptions_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"Mailbox: {1}\nTitle: {2}\nAuthor: {3}\nDate: {4}\n \n"
+	}
+
+	"MessageOptions_Show_message"
+	{
+		"en"		"Show message"
+	}
+
+	"MessageOptions_Delete"
+	{
+		"en"		"Delete"
+	}
+
+	"MessageOptions_Show player info"
+	{
+		"en"		"Show player info"
+	}
+
+	"MessageOptions_Back"
+	{
+		"en"		"Back to list"
+	}
+
+	"ShowPlayerInfo_Title"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Name: {1}\nSteamID: {2}\n \n"
+	}
+
+	"ShowMessage_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"Mailbox: {1}\nTitle: {2}\nAuthor: {3}\n \n{4}"
+	}
+
+	"DeleteMessage_Confirmation_Title"
+	{
+		"en"		"Do you really want to delete this message?"
+	}
+
+	"DeleteMessage_Confirmation_Yes"
+	{
+		"en"		"Yes, delete it"
+	}
+
+	"DeleteMessage_Confirmation_No"
+	{
+		"en"		"No, i've changed my mind"
+	}
+
+	"CreatingNewMailbox_Someone else"
+	{
+		"en"		"Sorry, but right now someone else is creating a mailbox"
+	}
+
+	"CreatingNewMailbox_Max"
+	{
+		"en"		"You have reached maximum amount of mailboxes {purple}(%d)"
+	}
+
+	"CreatingNewMailbox_Title"
+	{
+		"en"		"Mailbox Creator\nDo u want to create new mailbox?\nAfter you confirm, your chat will be blocked\nEverything you'll type, will be redirected to the plugin\nAmount of mailboxes: %d/%d"
+	}
+
+	"CreatingNewMailbox_Yes"
+	{
+		"en"		"Yes, I want to create new mailbox"
+	}
+
+	"CreatingNewMailbox_No"
+	{
+		"en"		"No, I resign"
+	}
+
+	"CreatingNewMailbox_No_Inform"
+	{
+		"en"		"You decided not to create new mailbox"
+	}
+
+	"BrowseMailboxes_Title"
+	{
+		"en"		"List of active mailboxes:"
+	}
+
+	"BrowseMailboxes_Title_No mailboxes"
+	{
+		"en"		"Sorry, there are no active mailboxes"
+	}
+
+	"CreateMessage_Box full"
+	{
+		"en"		"Mailbox {firered}%s{default} is full..."
+	}
+
+	"CreateMessage_Title"
+	{
+		"en"		"You are about to write a message to mailbox %s\nIt can contain up to 5 lines with 50 characters each\nSimply type your message in chat\nExample: \"I want to report a cheater\"\nEvery time you hit ENTER, it creates new line\nDuring this process, no one will see your messages\nDo you want to create a message?"
+	}
+
+	"CreateMessage_Yes"
+	{
+		"en"		"Yes, I want to create a message"
+	}
+
+	"CreateMessage_No"
+	{
+		"en"		"No, I resign"
+	}
+
+
+	"CreateMessage_Inform"
+	{
+		"en"		"Now write the topic of your message in chat. Don't worry - no one will se it :)"
+	}
+
+	"Entered value"
+	{
+		"en"		"{greyblue}Entered value: {green}%s"
+	}
+
+	"CreateMessage_TooLong"
+	{
+		"en"		"Your message/title is too long! Try again (Up to {darkred}%d{default} characters)"
+	}
+
+	"CreateMessage_Restricted characters"
+	{
+		"en"		"Your message contains restricted characters!"
+	}
+
+	"CreateMessage_Max lines 1"
+	{
+		"en"		"You have reached max amount of lines!"
+	}
+
+	"CreateMessage_Max lines 2"
+	{
+		"en"		"You can either delete line to make changes, or just send it"
+	}
+
+	"CreateMessage_MessageMenu_Send"
+	{
+		"en"		"Send message"
+	}
+
+	"CreateMessage_MessageMenu_Delete line"
+	{
+		"en"		"Delete last line"
+	}
+
+	"CreateMessage_MessageMenu_Cancel"
+	{
+		"en"		"Cancel creating message"
+	}
+
+	"CreateMessage_MessageMenu_Correct"
+	{
+		"en"		"Correct title"
+	}
+
+	"CreateMessage_MessageMenu_Title"
+	{
+		"#format"	"{1:s},{2:d},{3:s},{4:s}"
+		"en"		"To: {1} | Lines: {2}/5\nTitle: {3}\n{4}\n\n"
+	}
+
+	"CreateMessage_Inform 1"
+	{
+		"en"		"You have entered {purple}%d{default} of {violet}5{default} lines"
+	}
+
+	"CreateMessage_Inform 2"
+	{
+		"en"		"If you want to add another one, just type in chat as before"
+	}
+
+	"CreateMessage_Inform 3"
+	{
+		"en"		"If menu happen to disappear, to stop creating type {darkred}\"abort\""
+	}
+
+	"CreateMessage_Someone filled"
+	{
+		"en"		"Sorry, but someone has filled this mailbox before..."
+	}
+
+	"CreateMessage_Success"
+	{
+		"en"		"The message has been sent {green}succesfully{default} :)"
+	}
+
+	"CreateMessage_Error"
+	{
+		"en"		"Something went wrong... your message hasn't been sent"
+	}
+
+	"CreateMessage_Canceled"
+	{
+		"en"		"Sending message has been canceled before..."
+	}
+
+	"CreateMessage_Empty"
+	{
+		"en"		"You cannot send empty message..."
+	}
+
+	"CreateMessage_Aborted"
+	{
+		"en"		"Creating new messsage has been aborted..."
+	}
+
+	"CreateMessage_Correct 1"
+	{
+		"en"		"You can correct your title now"
+	}
+
+	"CreateMessage_Correct 2"
+	{
+		"en"		"Just type it in the chat :)"
+	}
+
+	"NewMessage 1"
+	{
+		"en"		"You have a new message in your mailbox {firered}%s{default}!"
+	}
+
+	"NewMessage 2"
+	{
+		"en"		"{mediumgreen}Author:{lightgreen} %s,{mediumgreen} Title:{lightgreen} %s"
+	}
+
+	"DeleteMessage_Success"
+	{
+		"en"		"Message deleted"
+	}
+
+	"DeleteMessage_Error"
+	{
+		"en"		"Some unknown problem has occured..."
+	}
+
+	"DeleteMailbox_Succcess"
+	{
+		"en"		"Mailbox deleted..."
+	}
+
+	"Login_Success"
+	{
+		"en"		"Logged in succesfully!"
+	}
+
+	"Login_Failure"
+	{
+		"en"		"Incorrect password..."
+	}
+
+	"CreateMailbox_EntryInformation 1"
+	{
+		"en"		"Now, type the name of new Mailbox in the chat"
+	}
+
+	"CreateMailbox_EntryInformation 2"
+	{
+		"en"		"Max length is {darkred}15{default} characters"
+	}
+
+	"CreateMailbox_Inform_Abort"
+	{
+		"en"		"If you wish to cancel creating, type {darkred}abort"
+	}
+
+	"CreateMailbox_Abort 1"
+	{
+		"en"		"You have typed something incorrectly..."
+	}
+
+	"CreateMailbox_Abort general"
+	{
+		"en"		"Creating new mailbox has been aborted..."
+	}
+
+	"CreateMailbox_Abort_Already exists"
+	{
+		"en"		"Sorry, but such mailbox already exists!"
+	}
+
+	"CreateMailbox_Abort_Max characters"
+	{
+		"en"		"You have exceeded the limit of the characters"
+	}
+
+	"CreateMailbox_Enter_Description 1"
+	{
+		"en"		"It's time to enter a short description of your mailbox"
+	}
+
+	"CreateMailbox_Enter_Description 2"
+	{
+		"en"		"It can hold up to {darkred}30{default} characters"
+	}
+
+	"CreateMailbox_Enter_Password 1"
+	{
+		"en"		"Now, insert the security password (max {darkred}20{default} characters)"
+	}
+
+	"CreateMailbox_Enter_Password 2"
+	{
+		"en"		"Don't worry - no one will se it"
+	}
+
+	"CreateMailbox_Enter_Capacity 1"
+	{
+		"en"		"Good job! Now specify the capacity of your mailbox"
+	}
+
+	"CreateMailbox_Enter_Capacity 2"
+	{
+		"en"		"Each mailbox can hold up to {darkred}%d{default} messages"
+	}
+
+	"CreateMailbox_Enter_Type 1"
+	{
+		"en"		"We're almost there! The last thing is to specify the type of mailbox"
+	}
+
+	"CreateMailbox_Enter_Type 2"
+	{
+		"en"		"Type '{green}%d{default}', to set your mailbox to public. It receives messages from {lightgreen}all the players"
+	}
+	
+	"CreateMailbox_Enter_Type 3"
+	{
+		"en"		"Type '{green}%d{default}', to set your mailbox to limited. {lightgreen}Only VIPs{default} will be able to send messages"
+	}
+
+	"CreateMailbox_Enter_Type 4"
+	{
+		"en"		"Type '{green}%d{default}', to create an announcement box. {lightgreen}All the players{default} will be able to read this box, but {lightgreen}only admin{default} can post to it"
+	}	
+
+	"CreateMailbox_Confirmation_Info 1"
+	{
+		"en"		"Now, confirm or discard creating a new mailbox"
+	}
+
+	"CreateMailbox_Confirmation_Info 2"
+	{
+		"en"		"If the menu happens to disappear, type '{darkred}abort{default}' in the chat"
+	}
+
+	"CreateMailbox_Confirmation_Menu_Title"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"Name: {1}\nDescription: {2}\nPassword: {3}\nCapacity: {4}\nVisibility: {5}\nDo u want to create it?"
+	}
+
+	"CreateMailbox_Yes"
+	{
+		"en"		"Yes, create it"
+	}
+
+	"CreateMailbox_No"
+	{
+		"en"		"No, I resign"
+	}
+
+	"CreateMailbox_Resign"
+	{
+		"en"		"You decided not to create new mailbox"
+	}
+
+	"CreateMailbox_Successfully"
+	{
+		"en"		"You have succesfully created new mailbox {firered}%s{default}!"
+	}
+
+	"ChangeMailbox_TooLong 1"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"Sorry, but your {1} is too long (max {2} characters)"
+	}
+
+	"ChangeMailbox_TooLong 2"
+	{
+		"en"		"Changing mailbox {firered}%s{default} has been aborted..."
+	}
+
+	"ChangeMailbox_Already exists 1"
+	{
+		"en"		"Sorry, but such mailbox already exists!"
+	}
+
+	"ChangeMailbox_Already exists 2"
+	{
+		"en"		"Changing mailbox password/description has been aborted..."
+	}
+
+	"ChangeMailbox_Already entered 1"
+	{
+		"en"		"You have already entered something..."
+	}
+
+	"ChangeMailbox_Already entered 2"
+	{
+		"en"		"Accept or deny it first..."
+	}
+
+	"ChangeMailbox_Confirmation_Title"
+	{
+		"en"		"Your new %s:\n%s\n \nDo u want to confirm?\n"
+	}
+
+	"ChangeMailbox_Confirmation_Yes"
+	{
+		"en"		"Yes"
+	}
+
+	"ChangeMailbox_Confirmation_No"
+	{
+		"en"		"No"
+	}
+
+	"ChangeMailbox_Success_Inform"
+	{
+		"en"		"Your mailbox {green}%s{default} has been succesfully changed!"
+	}
+
+	"ChangeMailbox_Deny changes"
+	{
+		"en"		"You decided not to change mailbox %s..."
+	}
+
+}
