@@ -4,4 +4,4 @@ This is the place, where I store plugins made by me for the SourceMod community.
 
 - MailboxGO - Tool for creating in-game mailboxes. Can be used in various ways
 
-# Visit Go-Code.pl
+# Visit my SourceMod site:  www.Go-Code.pl
