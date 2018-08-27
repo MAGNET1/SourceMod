@@ -167,9 +167,9 @@ methodmap Array2D < ArrayList
 
 public Plugin myinfo =
 {
-    name = "ClansGO",
+    name = "Array2D",
     author = "MAGNET | YouTube: Koduj z Magnetem",
-    description = "Plugin that allows to create your own team",
+    description = "Allows to create dwo-dimensional dynamic arrays",
     version = "0.1",
     url = "http://go-code.pl/"
 };
