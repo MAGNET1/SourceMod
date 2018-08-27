@@ -185,7 +185,7 @@ public Action testo(int client, int args)
 	Base.PushEntry(5); // pushes 5 entries - 5xPushCell(ArrayList)
 	for (int i = 0; i < Base.GetSize(); i++)
 	{
-		for (int j = 0; j < 5; j++)	Base.Push2D(i, i * j * 5); // pushes cell value in the table at the given coordiantes
+		for (int j = 0; j < 5; j++)	Base.Push2D(i, i * j * 5); // pushes cell value to the table at the given coordinates
 	}
 	for (int i = 0; i < Base.GetSize(); i++)
 	{
