@@ -5,9 +5,9 @@
 
 public Plugin myinfo =
 {
-    name = "ClansGO",
+    name = "Array2D example",
     author = "MAGNET | YouTube: Koduj z Magnetem",
-    description = "Plugin that allows to create your own team",
+    description = "How to use",
     version = "0.1",
     url = "http://go-code.pl/"
 };
