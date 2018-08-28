@@ -33,9 +33,10 @@ methodmap Array2D < ArrayList
     	return tmp.Length;
     }
     
-    public void ShiftUpEntry(int x)
+    public void ShiftUpEntry(int x, size=1)
     {
 	this.ShiftUp(x);
+	this.Set(x, new ArrayList(size))
     }
     
     public void EraseEntry(int x)
