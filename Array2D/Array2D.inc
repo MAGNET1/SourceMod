@@ -35,14 +35,14 @@ methodmap Array2D < ArrayList
     
     public void ShiftUpEntry(int x)
     {
-		this.ShiftUp(x);
+	this.ShiftUp(x);
     }
     
     public void EraseEntry(int x)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.Clear();
-		tmp.Erase(x);
+	ArrayList tmp = this.Get(x);
+	tmp.Clear();
+	this.Erase(x);
     }
     
     public void SwapEntries(int x1, int x2)
@@ -55,8 +55,8 @@ methodmap Array2D < ArrayList
     	ArrayList tmp;
     	for (int i = 0; i < this.Length;i++)
     	{
-			tmp = this.Get(i);
-			tmp.Clear();
+		tmp = this.Get(i);
+		tmp.Clear();
     	}
     	this.Clear();
     }
@@ -69,14 +69,14 @@ methodmap Array2D < ArrayList
     
     public ArrayList Clone2D(int x)
     {
-		ArrayList tmp = this.Get(x);
-		return tmp.Clone();
+	ArrayList tmp = this.Get(x);
+	return tmp.Clone();
     }
     
     public void Resize2D(int x, int newsize)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.Resize(newsize);
+	ArrayList tmp = this.Get(x);
+	tmp.Resize(newsize);
     }
     
     public int Push2D(int x, int value)
@@ -120,49 +120,49 @@ methodmap Array2D < ArrayList
     
     public void Set2D(int x, int y, any value, int block=0, bool asChar=false)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.Set(y, value, block, asChar);
+	ArrayList tmp = this.Get(x);
+	tmp.Set(y, value, block, asChar);
     }
     
     public void SetString2D(int x, int y, const char[] value)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.SetString(y, value);
+	ArrayList tmp = this.Get(x);
+	tmp.SetString(y, value);
     }
     
     public void SetArray2D(int x, int y, const any[] values, int size=-1)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.SetArray(y, values, size);
+	ArrayList tmp = this.Get(x);
+	tmp.SetArray(y, values, size);
     }
     
     public void ShiftUp2D(int x, int y)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.ShiftUp(y);
+	ArrayList tmp = this.Get(x);
+	tmp.ShiftUp(y);
     }
     
     public void Erase2D(int x, int y)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.Erase(y);
+	ArrayList tmp = this.Get(x);
+	tmp.Erase(y);
     }
     
     public void SwapAt2D(int x, int y1, int y2)
     {
-		ArrayList tmp = this.Get(x);
-		tmp.SwapAt(y1, y2);
+	ArrayList tmp = this.Get(x);
+	tmp.SwapAt(y1, y2);
     }
     
     public int FindString2D(int x, const char[] item)
     {
-		ArrayList tmp = this.Get(x);
-		return tmp.FindString(item);
+	ArrayList tmp = this.Get(x);
+	return tmp.FindString(item);
     }
     
     public int FindValue2D(int x, any item, int block=0)
     {
-		ArrayList tmp = this.Get(x);
-		return tmp.FindValue(item, block);
+	ArrayList tmp = this.Get(x);
+	return tmp.FindValue(item, block);
     }
 }  
