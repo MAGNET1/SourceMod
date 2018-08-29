@@ -185,7 +185,7 @@ public void InformPlayersAchievementAccomplished(int client, int AchievementPos)
 	//GoPrint(client, "You have accomplished achievement{green} %s{default}! Congratulations!", AchievementNamee);
 	GoPrint(ALL, "Player{green} %s{default} has just accomplished achievement{firered} %s{default}!", Name, AchievementNamee);
 	
-	PrintHintText(client, "<font color=\"#ff0000\">Ukonczono Achievement</font><font color=\"#00ff00\"> %s!</font>", AchievementNamee);
+	PrintHintText(client, "<font color=\"#ff0000\">Achievement completed:</font><font color=\"#00ff00\"> %s!</font>", AchievementNamee);
 }
 
 public int FindAchievementPosInPlayerArray(int client, int IdOfAchievement)
