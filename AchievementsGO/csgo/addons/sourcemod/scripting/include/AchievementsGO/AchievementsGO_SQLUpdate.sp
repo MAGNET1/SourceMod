@@ -4,39 +4,10 @@ public void UpdatePlayerData(int client)
 	
 	if (!IsClientConnected(client) || !AreAllAchievementsLoaded || PlayerID[client] == NOT_ASSIGNED)	return;
 	
-	UpdateAllAchievements(client);
 	UpdatePlayerInformations(clientUserId);
+	UpdateAllAchievements(clientUserId);
 }
 
-public void UpdateAllAchievements(int client)
-{
-	int clientUserId = GetClientUserId(client);
-	
-	char query[512];
-	for (int i = 0; i < GetArraySize(Player_AchievementID[client]);i++)
-	{
-		if (HasDisconnectedInTheMeantime(clientUserId))	return; // AchievementGO_SQLLoadData.sp
-		
-		FormatAchievementsUpdateQuery(query, client, i);
-		DB.Query(CheckPlayerAchievementUpdateResults, query, _, DBPrio_High);
-	}	
-}
-
-public void FormatAchievementsUpdateQuery(char[] query, int client, int i)
-{
-	int ID = GetArrayCell(Player_AchievementID[client], i);
-	int CurrentProgress = GetArrayCell(Player_AchievementProgress[client], i);
-	Format(query, 511, "UPDATE `Players` SET `Progress`=%d WHERE `AchievementID`=%d", CurrentProgress, ID);	
-}
-
-public void CheckPlayerAchievementUpdateResults(Database db, DBResultSet results, const char[] error, any data)
-{
-	if (db == null)
-	{
-		LogMessage("Could not update player achievement informations! Error: %s", error);
-		return;
-	}
-}
 
 public void UpdatePlayerInformations(int clientUserId)
 {
@@ -63,6 +34,38 @@ public void CheckPlayerInfoUpdateResults(Database db, DBResultSet results, const
 	if (db == null)
 	{
 		LogMessage("Could not update player informations! Error: %s", error);
+		return;
+	}
+}
+
+public void UpdateAllAchievements(int clientUserId)
+{
+	int client = GetClientOfUserId(clientUserId);
+	
+	if (!client)	return;
+	
+	char query[512];
+	for (int i = 0; i < GetArraySize(Player_AchievementID[client]);i++)
+	{
+		if (HasDisconnectedInTheMeantime(clientUserId))	return; // AchievementGO_SQLLoadData.sp
+		
+		FormatAchievementsUpdateQuery(query, client, i);
+		DB.Query(CheckPlayerAchievementUpdateResults, query, _, DBPrio_High);
+	}	
+}
+
+public void FormatAchievementsUpdateQuery(char[] query, int client, int i)
+{
+	int ID = GetArrayCell(Player_AchievementID[client], i);
+	int CurrentProgress = GetArrayCell(Player_AchievementProgress[client], i);
+	Format(query, 511, "UPDATE `Players` SET `Progress`=%d WHERE `AchievementID`=%d", CurrentProgress, ID);	
+}
+
+public void CheckPlayerAchievementUpdateResults(Database db, DBResultSet results, const char[] error, any data)
+{
+	if (db == null)
+	{
+		LogMessage("Could not update player achievement informations! Error: %s", error);
 		return;
 	}
 }

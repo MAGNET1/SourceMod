@@ -39,10 +39,10 @@ methodmap Array2D < ArrayList
     }
     
     // shifts entries up and creates new entry in the blank space
-    public void ShiftUpEntry(int x, size=1)
+    public void ShiftUpEntry(int x, int size=1)
     {
 		this.ShiftUp(x);
-		this.Set(x, new ArrayList(size))
+		this.Set(x, new ArrayList(size));
     }
     
     // Erases certain entry and shifts everything down

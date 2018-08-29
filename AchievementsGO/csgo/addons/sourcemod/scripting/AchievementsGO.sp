@@ -114,7 +114,7 @@ public void OnClientAuthorized(int client, const char[] auth)
 
 public void OnClientDisconnect(int client)
 {
-	ClearPlayerInfo(client); //AchievementsGO_SQLLoadData.sp
+	UpdatePlayerData(client); //AchievementsGO_SQLUpdate.sp
 }
 
 public void OnMapStart()
