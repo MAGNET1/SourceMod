@@ -1,5 +1,7 @@
 public void UpdatePlayerData(int client)
 {
+	if (!IsClientConnected(client))	return;
+	
 	int clientUserId = GetClientUserId(client);
 	
 	if (!IsClientConnected(client) || !AreAllAchievementsLoaded || PlayerID[client] == NOT_ASSIGNED)	return;
