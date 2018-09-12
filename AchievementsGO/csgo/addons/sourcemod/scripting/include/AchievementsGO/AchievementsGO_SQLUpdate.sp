@@ -1,6 +1,6 @@
 public void UpdatePlayerData(int client)
 {
-	if (!IsClientConnected(client))	return;
+	if (!IsClientAuthorized(client))	return;
 	
 	int clientUserId = GetClientUserId(client);
 	

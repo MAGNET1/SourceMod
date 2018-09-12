@@ -1,0 +1,76 @@
+"Phrases"
+{
+	"DB problems"
+	{
+		"en"		"There are some problems with the database. Try again later..."
+	}
+
+	"MainMenu_Marked"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"MuteGO - Main Menu\nYour status: {1} {2}\n \nYou are muting:\nPlayers with no mutation: {3}\nPlayers considered rude: {4}"
+	}
+	"MainMenu_OK"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"MuteGO - Main Menu\nYour status: OK\n \nYou are muting:\nPlayers with no mutation: {1}\nPlayers considered rude: {2}"
+	}
+	"MainMenu_Mutation_Unmute"
+	{
+		"en"		"Unmute players with no mutation"
+	}
+	"MainMenu_Mutation_Mute"
+	{
+		"en"		"Mute players with no mutation"
+	}
+	"MainMenu_Rude_Mute"
+	{
+		"en"		"Mute players considered rude"
+	}
+	"MainMenu_Rude_Unmute"
+	{
+		"en"		"Unmute players considered rude"
+	}
+
+	"AdminMenu_Manage"
+	{
+		"en"		"Manage players"
+	}
+	
+	"BackButton"
+	{
+		"en"		"Back"
+	}
+
+	"PlayersList_Title"
+	{
+		"en"		"MuteGO - Players List"
+	}
+
+	"Mutation"
+	{
+		"en"		"Mutation"
+	}
+	"Rude"
+	{
+		"en"		"Rude"
+	}
+	"Mark"
+	{
+		"en"		"Mark"
+	}
+	"Unmark"
+	{
+		"en"		"Unmark"
+	}
+	"PlayerLeft"
+	{
+		"en"		"The player has left the server..."
+	}
+
+	"PlayerOptions_Title"
+	{
+		"en"		"%N\nMutation: %s\nRude: %s\n "
+	}
+
+}

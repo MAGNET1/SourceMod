@@ -1,0 +1,76 @@
+"Phrases"
+{
+	"DB problems"
+	{
+		"en"		"Wystąpiły problemy z bazą danych. Spróbuj ponownie później..."
+	}
+
+	"MainMenu_Marked"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"MuteGO - Main Menu\nTwój status: {1} {2}\n \nObecnie wyciszasz:\nGraczy bez mutacji: {3}\nGraczy złośliwych: {4}"
+	}
+	"MainMenu_OK"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"MuteGO - Main Menu\nTwój status: OK\n \nObecnie wyciszasz:\nGraczy bez mutacji: {1}\nGraczy złośliwych: {2}"
+	}
+	"MainMenu_Mutation_Unmute"
+	{
+		"en"		"Wyłącz wyciszanie graczy bez mutacji"
+	}
+	"MainMenu_Mutation_Mute"
+	{
+		"en"		"Wycisz graczy bez mutacji"
+	}
+	"MainMenu_Rude_Mute"
+	{
+		"en"		"Wycisz graczy złośliwych"
+	}
+	"MainMenu_Rude_Unmute"
+	{
+		"en"		"Wyłącz wyciszanie graczy złośliwych"
+	}
+
+	"AdminMenu_Manage"
+	{
+		"en"		"Zarządzaj graczami:"
+	}
+	
+	"BackButton"
+	{
+		"en"		"Wstecz"
+	}
+
+	"PlayersList_Title"
+	{
+		"en"		"MuteGO - Lista graczy"
+	}
+
+	"Mutation"
+	{
+		"en"		"Mutacja"
+	}
+	"Rude"
+	{
+		"en"		"Złośliwy"
+	}
+	"Mark"
+	{
+		"en"		"Oznacz"
+	}
+	"Unmark"
+	{
+		"en"		"Wyłącz oznaczenie"
+	}
+	"PlayerLeft"
+	{
+		"en"		"Gracz opuścił serwer..."
+	}
+
+	"PlayerOptions_Title"
+	{
+		"en"		"%N\nMutacja: %s\nZłośliwy: %s\n "
+	}
+
+}
