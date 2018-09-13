@@ -71,6 +71,7 @@ public void OnClientDisconnect(int client)
 	
 	Mute_Mutation[client] = 0;
 	Mute_Rude[client] = 0;
+	IsInDatabase[client] = false;
 	
 	UpdateMuteStateAll();
 }
