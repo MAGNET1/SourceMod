@@ -158,8 +158,8 @@ public void LoadPlayerResults(Database db, DBResultSet results, const char[] err
 	if(results.RowCount)
 	{
 		IsInDatabase[client] = true;
-		UpdateMuteStateAll();
 	}
+	UpdateMuteStateAll();
 	
 }
 
