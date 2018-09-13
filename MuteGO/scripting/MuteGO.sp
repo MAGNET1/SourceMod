@@ -28,6 +28,15 @@ char ColorsTag[][] =  { "\x01", "\x02", "\x03", "\x04", "\x05", "\x06", "\x07", 
 Handle Cookie_Mutation;
 Handle Cookie_Rude;
 
+public Plugin myinfo =
+{
+    name = "MuteGO",
+    author = "MAGNET | YouTube: Koduj z Magnetem",
+    description = "Allows admin to mark players who have no mutation or behave rudely. These can be muted by each player",
+    version = "0.2",
+    url = "http://go-code.pl/"
+};
+
 public void OnPluginStart()
 {
 	SQL_InitConnection();
