@@ -33,7 +33,7 @@ public Plugin myinfo =
     name = "MuteGO",
     author = "MAGNET | YouTube: Koduj z Magnetem",
     description = "Allows admin to mark players who have no mutation or behave rudely. These can be muted by each player",
-    version = "0.2",
+    version = "0.3",
     url = "http://go-code.pl/"
 };
 
@@ -43,7 +43,7 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_mg", MainMenu);
 	
 	Cookie_Mutation = RegClientCookie("MuteGO_Mutation", "Mute players without mutation", CookieAccess_Protected);
-	Cookie_Rude = RegClientCookie("MuteGO_Mutation", "Mute players considered as rude", CookieAccess_Protected);
+	Cookie_Rude = RegClientCookie("MuteGO_Rude", "Mute players considered as rude", CookieAccess_Protected);
 	
 	LoadTranslations("mutego.phrasesFinal");
 }
