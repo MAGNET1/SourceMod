@@ -38,10 +38,24 @@ public int SQL_LoadAchievement(DataPack NewAchievementData) // AchievementsGO_Na
 	{
 		IdOfNewAchievement = SQL_FetchInt(query, 0);
 	}
+
+    bool canAdd = true;
+
+    for (int i = 0; i < AchievementID.Length; i++) {
+        if (GetArrayCell(AchievementID, i) != IdOfNewAchievement)   continue;
+
+        canAdd = false;
+        char buffered[512];
+        NewAchievementData.ReadString(buffered, sizeof(buffered));
+        SetArrayString(AchievementDescription, i, buffered);
+        NewAchievementData.ReadString(buffered, sizeof(buffered));
+        SetArrayString(AchievementCategory, i, buffered);
+        SetArrayCell(AchievementValue, i, NewAchievementData.ReadCell());
+    }
+
+    if (canAdd == true)    AddAchievementToArrays(IdOfNewAchievement, NewAchievementData);
 	
-	AddAchievementToArrays(IdOfNewAchievement, NewAchievementData);
-	
-	UpdateAchievementInfo(IdOfNewAchievement, NewAchievementData); // TODO: Check if works
+    UpdateAchievementInfo(IdOfNewAchievement, NewAchievementData); // TODO: Check if works
 	
 	return IdOfNewAchievement;
 }
