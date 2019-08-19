@@ -1,0 +1,111 @@
+"Phrases"
+{
+	"message sent"
+	{
+		"en"	"%s Twój raport został wysłany {lightgreen}pomyślnie!"
+	}
+
+	"no access"
+	{
+		"en"	"%s Nie masz dostępu do tej komendy!"
+	}
+
+	"new report"
+	{
+		"en"	"%s Nowy raport od gracza{lightgreen} %N{default}. Sprawdź komendę {olive}/report"
+	}
+
+	"delay"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"	"{1} Nie można wysłać wiadomości. Musisz odczekać{lightred} {2}{default} sekund, aby wysłać kolejny!"
+	}
+
+	"user blocked"
+	{
+		"en"	"%s Nie możesz wysyłać raportów. Skontaktuj się z adminem"
+	}
+
+	"capacity"
+	{
+		"en"	"%s Nie można wysłać raportu. Osiągnięto maksymalną ilość raportów!"
+	}
+
+	"browse"
+	{
+		"en"	"Przeglądaj raporty"
+	}
+
+	"manage"
+	{
+		"en"	"Zarządzaj graczami"
+	}
+
+	"no messages"
+	{
+		"en"	"Brak raportów!"
+	}
+
+	"exit"
+	{
+		"en"	"Wyjdź"
+	}
+
+	"back"
+	{
+		"en"	"Wróć"
+	}
+
+	"delete"
+	{
+		"en"	"usuń ten raport"
+	}
+
+	"block"
+	{
+		"en"	"Zablokuj możliwość wysyłania raportów temu graczowi"
+	}
+
+	"amount messages"
+	{
+		"en"	"Masz %d raportów"
+	}
+
+	"report format"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"	"\"{1}\" by {2}"
+	}
+
+	"report menu"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"	"Autor: {1}\nCzas: {2}\nSteamID: {3}\n \nWiadomość: {4}\n "
+	}
+
+	"wrong message"
+	{
+		"en"	"%s Wygląda na to, że inny admin grzebie przy raportach. Spróbuj ponownie!"
+	}
+
+	"choose"
+	{
+		"en"	"Wybierz gracza..."
+	}
+
+
+	"user left"
+	{
+		"en"	"Wybierz graczy do zablokowania..."
+	}
+
+	"block on"
+	{
+		"en"	"%s Możliwość wysyłania raportów została zablokowana przez{lightred} Admina"
+	}
+
+	"block off"
+	{
+		"en"	"%s Dzięki adminowi{lightgreen} odzyskałeś{default} możliwość wysyłania raportów!"
+	}
+}

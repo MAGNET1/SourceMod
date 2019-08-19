@@ -1,0 +1,111 @@
+"Phrases"
+{
+	"message sent"
+	{
+		"en"	"%s Your report was sent {lightgreen}succesfully!"
+	}
+
+	"no access"
+	{
+		"en"	"%s You have no access to this command!"
+	}
+
+	"new report"
+	{
+		"en"	"%s New report from player{lightgreen} %N{default}. Check the {olive}/report{default} command"
+	}
+
+	"delay"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"	"{1} Can't send the report. You need to wait{lightred} {2}{default} seconds to send another report!"
+	}
+
+	"user blocked"
+	{
+		"en"	"%s You are disallowed to send reports. Try to contact server admin"
+	}
+
+	"capacity"
+	{
+		"en"	"%s Can't send the report. The report box has reached its maximum capacity!"
+	}
+
+	"browse"
+	{
+		"en"	"Browse reports"
+	}
+
+	"manage"
+	{
+		"en"	"Manage players"
+	}
+
+	"no messages"
+	{
+		"en"	"There are no reports!"
+	}
+
+	"exit"
+	{
+		"en"	"Exit"
+	}
+
+	"back"
+	{
+		"en"	"Back"
+	}
+
+	"delete"
+	{
+		"en"	"Delete this report"
+	}
+
+	"block"
+	{
+		"en"	"Disallow sending reports by this player"
+	}
+
+	"amount messages"
+	{
+		"en"	"You have %d reports"
+	}
+
+	"report format"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"	"\"{1}\" by {2}"
+	}
+
+	"report menu"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"	"Author: {1}\nTime: {2}\nSteamID: {3}\n \nMessage: {4}\n "
+	}
+
+	"wrong message"
+	{
+		"en"	"%s It seems another admin is tampering in reports. Try again!"
+	}
+
+	"choose"
+	{
+		"en"	"Choose players to block..."
+	}
+
+
+	"user left"
+	{
+		"en"	"Choose players to block..."
+	}
+
+	"block on"
+	{
+		"en"	"%s Your reports ability has been blocked by{lightred} Admin"
+	}
+
+	"block off"
+	{
+		"en"	"%s Thanks to admin, you have{lightgreen} regained{default} access to send reports!"
+	}
+}
