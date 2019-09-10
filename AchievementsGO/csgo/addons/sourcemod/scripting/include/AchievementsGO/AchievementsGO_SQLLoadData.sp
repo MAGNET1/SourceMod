@@ -1,16 +1,13 @@
 // @@ Loading Achievement ID, and eventually inserting if doesn't exist
-
 public int SQL_LoadAchievement(DataPack NewAchievementData) // AchievementsGO_Natives.sp
 {
-	if (!IsConnectionEstablished)	return -1;
-	
+	if (!IsConnectionEstablished())	return -1;
+
 	char Name[ACHIEVEMENT_MAX_NAME_LENGTH];
-	
+
 	NewAchievementData.Reset();
 	NewAchievementData.ReadString(Name, ACHIEVEMENT_MAX_NAME_LENGTH);
-	
-	//LogMessage("Tworze: %s", Name);
-	
+
 	char buffer[256];
 	FormatAchievementLoadQuery(buffer, sizeof(buffer), Name);
 	SQL_LockDatabase(DB);
@@ -24,39 +21,39 @@ public int SQL_LoadAchievement(DataPack NewAchievementData) // AchievementsGO_Na
 		return -1;
 	}
 	SQL_UnlockDatabase(DB);
-	
+
 	int IdOfNewAchievement;
-	
+
 	// Such Achievement is not in the Database - we have to create one
 	if(query.RowCount == 0)
 	{
 		AddAchievementToDatabase(NewAchievementData);
 		return SQL_LoadAchievement(NewAchievementData);
 	}
-	
+
 	while(SQL_FetchRow(query))
 	{
 		IdOfNewAchievement = SQL_FetchInt(query, 0);
 	}
 
-    bool canAdd = true;
+	bool canAdd = true;
 
-    for (int i = 0; i < AchievementID.Length; i++) {
-        if (GetArrayCell(AchievementID, i) != IdOfNewAchievement)   continue;
+	for (int i = 0; i < AchievementID.Length; i++) {
+		if (GetArrayCell(AchievementID, i) != IdOfNewAchievement)   continue;
 
-        canAdd = false;
-        char buffered[512];
-        NewAchievementData.ReadString(buffered, sizeof(buffered));
-        SetArrayString(AchievementDescription, i, buffered);
-        NewAchievementData.ReadString(buffered, sizeof(buffered));
-        SetArrayString(AchievementCategory, i, buffered);
-        SetArrayCell(AchievementValue, i, NewAchievementData.ReadCell());
-    }
+		canAdd = false;
+		char buffered[512];
+		NewAchievementData.ReadString(buffered, sizeof(buffered));
+		SetArrayString(AchievementDescription, i, buffered);
+		NewAchievementData.ReadString(buffered, sizeof(buffered));
+		SetArrayString(AchievementCategory, i, buffered);
+		SetArrayCell(AchievementValue, i, NewAchievementData.ReadCell());
+	}
 
-    if (canAdd == true)    AddAchievementToArrays(IdOfNewAchievement, NewAchievementData);
-	
-    UpdateAchievementInfo(IdOfNewAchievement, NewAchievementData); // TODO: Check if works
-	
+	if (canAdd == true)	AddAchievementToArrays(IdOfNewAchievement, NewAchievementData);
+
+	UpdateAchievementInfo(IdOfNewAchievement, NewAchievementData); // TODO: Check if works
+
 	return IdOfNewAchievement;
 }
 
@@ -71,14 +68,14 @@ public void AddAchievementToDatabase(DataPack NewAchievementData)
 	char Description[ACHIEVEMENT_MAX_DESCRIPTION_LENGTH];
 	char Category[ACHIEVEMENT_MAX_CATEGORY_LENGTH];
 	int Value;
-	
+
 	NewAchievementData.Reset();
 	NewAchievementData.ReadString(Name, ACHIEVEMENT_MAX_NAME_LENGTH);
 	NewAchievementData.ReadString(Description, ACHIEVEMENT_MAX_DESCRIPTION_LENGTH);
 	NewAchievementData.ReadString(Category, ACHIEVEMENT_MAX_CATEGORY_LENGTH);
 	Value = NewAchievementData.ReadCell();
-	
-	
+
+
 	char buffer[256];
 	FormatAchievementInsertQuery(buffer, sizeof(buffer), Name, Description, Category, Value);
 	SQL_LockDatabase(DB);
@@ -105,14 +102,14 @@ public void AddAchievementToArrays(int IdOfNewAchievement, DataPack NewAchieveme
 	char Category[ACHIEVEMENT_MAX_CATEGORY_LENGTH];
 	int Value;
 	int PluginID;
-	
+
 	NewAchievementData.Reset();
 	NewAchievementData.ReadString(Name, ACHIEVEMENT_MAX_NAME_LENGTH);
 	NewAchievementData.ReadString(Description, ACHIEVEMENT_MAX_DESCRIPTION_LENGTH);
 	NewAchievementData.ReadString(Category, ACHIEVEMENT_MAX_CATEGORY_LENGTH);
 	Value = NewAchievementData.ReadCell();
 	PluginID = NewAchievementData.ReadCell();
-	
+
 	PushArrayCell(AchievementID, IdOfNewAchievement);
 	PushArrayString(AchievementName, Name);
 	PushArrayString(AchievementDescription, Description);
@@ -127,16 +124,16 @@ public void UpdateAchievementInfo(int IdOfNewAchievement, DataPack NewAchievemen
 	char Description[ACHIEVEMENT_MAX_DESCRIPTION_LENGTH];
 	char Category[ACHIEVEMENT_MAX_CATEGORY_LENGTH];
 	int Value;
-	
+
 	NewAchievementData.Reset();
 	NewAchievementData.ReadString(Name, ACHIEVEMENT_MAX_NAME_LENGTH);
 	NewAchievementData.ReadString(Description, ACHIEVEMENT_MAX_DESCRIPTION_LENGTH);
 	NewAchievementData.ReadString(Category, ACHIEVEMENT_MAX_CATEGORY_LENGTH);
 	Value = NewAchievementData.ReadCell();
-	
+
 	char FormatQuery[512];
 	FormatUpdateAchievementQuery(IdOfNewAchievement, FormatQuery, Name, Description, Category, Value);
-	DB.Query(UpdateAchievementResults, FormatQuery, NewAchievementData, DBPrio_High);
+	DB.Query(UpdateAchievementResults, FormatQuery, NewAchievementData, DBPrio_Low);
 }
 
 public void FormatUpdateAchievementQuery(int IdOfNewAchievement, char[] FormatBuffer, char[] Name, char[] Description, char[] Category, int Value)
@@ -147,15 +144,13 @@ public void FormatUpdateAchievementQuery(int IdOfNewAchievement, char[] FormatBu
 public void UpdateAchievementResults(Database db, DBResultSet results, const char[] error, DataPack NewAchievementData)
 {
 	CloseHandle(NewAchievementData);
-	
+
 	if (db == null || results == null)
 	{
 		LogMessage("Could not update Achievement informations! Error: %s", error);
 		return;
 	}
 }
-// @@ Loads PlayerID - unique,auto_increment value based on SteamID and stored in the database
-
 public void ClearPlayerInfo(int client)
 {
 	PlayerID[client] = 0;
@@ -166,83 +161,37 @@ public void ClearPlayerInfo(int client)
 
 public void LoadPlayerID(int client)
 {
-	if (!IsConnectionEstablished)
-	{
-		PrintToServer("Nie ma polaczenia!");
+	if (!IsConnectionEstablished())
 		return;
-	}
 	if (client == SERVER || !IsClientConnected(client))
-	{
 		return;
-	}
 	if(!AreAllTablesCreated())
 	{
 		CreateTimer(0.3, WaitLoadPlayerID, client);
 		return;
 	}
-	
-	char query[512];
-	FormatLoadClientIdQuery(query, client);
-	DB.Query(ProcessPlayerIdResults, query, GetClientUserId(client), DBPrio_High);
-}
+	LogMessage("LoadPlayerID - %N", client);
+	PlayerID[client] = GetSteamAccountID(client);
 
+	LoadPlayerAchievements(client);
+}
 public Action WaitLoadPlayerID(Handle timer, int client)
 {
 	if(IsClientConnected(client))	LoadPlayerID(client);
 }
 
-public void FormatLoadClientIdQuery(char[] query, int client)
-{
-	char SteamIdBuffer[128];
-	GetClientAuthId(client, AuthId_Steam2, SteamIdBuffer, sizeof(SteamIdBuffer));
-	Format(query, 511, "SELECT `ID`,`AccomplishedAchievements` FROM `PlayerID` WHERE `SteamID`='%s'", SteamIdBuffer);
-}
-
-public void ProcessPlayerIdResults(Database db, DBResultSet results, const char[] error, int clientUserId)
-{
-	if (db == null || results == null)
-	{
-		PrintToServer("Blad wczytywania PlayerID gracza (AchievementsGO)!");
-		LogMessage("Could not retrieve playerID informations! Error: %s", error);
-		return;
-	}
-	
-	int client = GetClientOfUserId(clientUserId);
-	
-	if (!client)	return;
-	
-	// if a certain player hasn't yet obtained his own PlayerID, we need to insert new row to the table
-	if(results.RowCount == 0)
-	{
-		InsertPlayerIdToDatabase(client);
-		return;
-	}
-	
-	if (!IsClientConnected(client))	return;
-	
-	while(SQL_FetchRow(results))
-	{
-		PlayerID[client] = SQL_FetchInt(results, 0);
-		AccomplishedAchievements[client] = SQL_FetchInt(results, 1);
-	}
-}
-
 public void InsertPlayerIdToDatabase(int client)
 {
 	if (!IsClientConnected(client))	return;
-	
+
 	char query[512];
 	FormatInsertClientIdQuery(query, client);
-	DB.Query(ProcessInsertPlayerIdResults, query, GetClientUserId(client), DBPrio_High);
+	DB.Query(ProcessInsertPlayerIdResults, query, GetClientUserId(client), DBPrio_Low);
 }
 
 public void FormatInsertClientIdQuery(char[] query, int client)
 {
-	char SteamIdBuffer[128];
-	char NameBuffer[MAX_NAME_LENGTH];
-	GetClientName(client, NameBuffer, sizeof(NameBuffer));
-	GetClientAuthId(client, AuthId_Steam2, SteamIdBuffer, sizeof(SteamIdBuffer));
-	Format(query, 511, "INSERT INTO `PlayerID`(`SteamID`,`Name`,`AccomplishedAchievements`) VALUES('%s','%s',0)", SteamIdBuffer,NameBuffer);
+	Format(query, 511, "INSERT INTO `Players` (`PlayerID`) VALUES (%d)", GetSteamAccountID(client));
 }
 
 public void ProcessInsertPlayerIdResults(Database db, DBResultSet results, const char[] error, int clientUserId)
@@ -252,11 +201,11 @@ public void ProcessInsertPlayerIdResults(Database db, DBResultSet results, const
 		LogMessage("Could not insert PlayerID! Error: %s", error);
 		return;
 	}
-	
+
 	int client = GetClientOfUserId(clientUserId);
-	
+
 	if (!client)	return;
-	
+
 	// now a player has PlayerID - it's time to obtain it....
 	LoadPlayerID(client);
 }
@@ -266,31 +215,23 @@ public void ProcessInsertPlayerIdResults(Database db, DBResultSet results, const
 
 public void LoadPlayerAchievements(int client)
 {
-	if (!IsConnectionEstablished)	return;
-	
+	if (!IsConnectionEstablished())	return;
+
 	if (client == SERVER || !IsClientConnected(client))	return;
-	
+
 	int clientUserId = GetClientUserId(client);
-	
-	// client needs to meet these two requirements....
-	if (!AreAllAchievementsLoaded || PlayerID[client] == NOT_ASSIGNED)
+
+	if (!AreAllAchievementsLoaded)
 	{
 		Wait(clientUserId);
 		return;
 	}
-	
-	for (int i = 0; i < GetArraySize(AchievementName);i++)
-	{
-		if (HasDisconnectedInTheMeantime(clientUserId))	return;
-		
-		char query[512];
-		FormatAchievementsSelectQuery(query, client, i);
-		DataPack ClientAndIndex = new DataPack();
-		ClientAndIndex.WriteCell(clientUserId);
-		ClientAndIndex.WriteCell(i);
-		DB.Query(ProcessPlayerAchievementResults, query, ClientAndIndex, DBPrio_High);
-	}
-	
+
+	if (HasDisconnectedInTheMeantime(clientUserId))	return;
+
+	char query[512];
+	FormatAchievementsSelectQueryFixed(query, client);
+	DB.Query(ProcessPlayerAchievementResults, query, clientUserId);
 }
 
 public bool HasDisconnectedInTheMeantime(int clientUserId)
@@ -307,55 +248,56 @@ public void Wait(int clientUserId)
 public Action MakeDelay(Handle timer, int clientUserId)
 {
 	int client = GetClientOfUserId(clientUserId);
-	
+
 	if(client)	LoadPlayerAchievements(client);
 }
 
-public void FormatAchievementsSelectQuery(char[] query, int client, int i)
+public void FormatAchievementsSelectQueryFixed(char[] query, int client)
 {
 	int ID = GetArrayCell(AchievementID, i);
-	Format(query, 511, "SELECT * FROM `Players` WHERE `PlayerID`=%d AND `AchievementID`=%d AND EXISTS(SELECT * FROM `Players` WHERE `PlayerID`=%d AND `AchievementID`=%d)", PlayerID[client], ID, PlayerID[client], ID);	
+	Format(query, 511, "SELECT * FROM `Players` WHERE `PlayerID`=%d", GetSteamAccountID(client));
 }
 
-public void ProcessPlayerAchievementResults(Database db, DBResultSet results, const char[] error, DataPack ClientAndIndex)
+
+public void ProcessPlayerAchievementResults(Database db, DBResultSet results, const char[] error, int clientUserId)
 {
 	if (db == null)
 	{
 		LogMessage("Could not retrieve player achievement informations! Error: %s", error);
 		return;
 	}
-	
-	ClientAndIndex.Reset();
-	int clientUserId = ClientAndIndex.ReadCell();
-	int i = ClientAndIndex.ReadCell();
-	
+
 	if (HasDisconnectedInTheMeantime(clientUserId))
 	{
-		CloseHandle(ClientAndIndex);
 		return;
 	}
-	
+
 	int client = GetClientOfUserId(clientUserId);
-	
-	int ID = GetArrayCell(AchievementID, i);
-	
-	if(results.RowCount == 0)
-	{
-		InsertPlayerAchievementToDatabase(ClientAndIndex);
-		return;
-	}
-	
+	int achievementID;
 	int progress;
-	
-	while(SQL_FetchRow(results))
-	{
+	int ID;
+
+	while(SQL_FetchRow(results)) {
+		achievementID = SQL_FetchInt(results, 1);
 		progress = SQL_FetchInt(results, 2);
+		ID = GetArrayCell(AchievementID, achievementID);
+
+		PushArrayCell(Player_AchievementID[client], ID);
+		PushArrayCell(Player_AchievementProgress[client], progress);
 	}
-	
-	PushArrayCell(Player_AchievementID[client], ID);
-	PushArrayCell(Player_AchievementProgress[client], progress);
-	
-	CloseHandle(ClientAndIndex);
+
+	for (int i = 0; i < GetArraySize(AchievementName);i++) {
+		ID = GetArrayCell(AchievementID, achievementID);
+
+		if(FindValueInArray(Player_AchievementID[client], ID) > -1) {
+			continue;
+		}
+
+		DataPack ClientAndIndex = new DataPack();
+		ClientAndIndex.WriteCell(clientUserId);
+		ClientAndIndex.WriteCell(i);
+		InsertPlayerAchievementToDatabase(ClientAndIndex);
+	}
 }
 
 public void InsertPlayerAchievementToDatabase(DataPack ClientAndIndex)
@@ -364,17 +306,17 @@ public void InsertPlayerAchievementToDatabase(DataPack ClientAndIndex)
 	int clientUserId = ClientAndIndex.ReadCell();
 	int i = ClientAndIndex.ReadCell();
 	CloseHandle(ClientAndIndex);
-	
+
 	if (HasDisconnectedInTheMeantime(clientUserId))	return;
-	
+
 	int client = GetClientOfUserId(clientUserId);
-	
+
 	int ID = GetArrayCell(AchievementID, i);
-	
+
 	char query[512];
 	FormatPlayerInsertionQuery(query, client, i);
-	DB.Query(ProcessPlayerInsertionResults, query, _, DBPrio_High);
-	
+	DB.Query(ProcessPlayerInsertionResults, query, _, DBPrio_Low);
+
 	PushArrayCell(Player_AchievementID[client], ID);
 	PushArrayCell(Player_AchievementProgress[client], 0);
 }
@@ -391,53 +333,5 @@ public void ProcessPlayerInsertionResults(Database db, DBResultSet results, cons
 	{
 		LogMessage("Could not insert new achievement row! Error: %s", error);
 		return;
-	}
-	
-}
-
-// @@ Load Top10
-
-public void LoadTop10()
-{
-	if (!IsConnectionEstablished)	return;
-	
-	if(tablesCreated != 3)
-	{
-		CreateTimer(0.3, WaitTop10);
-		return;
-	}
-	
-	char query[512];
-	FormatTop10Query(query);
-	DB.Query(GetTop10Results, query, _, DBPrio_High);	
-}
-
-public Action WaitTop10(Handle timer)
-{
-	LoadTop10();
-}
-
-public void FormatTop10Query(char[] query)
-{
-	Format(query, 511, "SELECT Name,AccomplishedAchievements FROM PlayerID ORDER BY AccomplishedAchievements DESC LIMIT 10");
-}
-
-public void GetTop10Results(Database db, DBResultSet results, const char[] error, any data)
-{
-	if (db == null || results == null)
-	{
-		LogMessage("Could not get top 10! Error: %s", error);
-		return;
-	}
-	
-	// there might be less than 10 players in the top
-	AmountOfLeaders = results.RowCount;
-	int i = 0;
-	
-	while(SQL_FetchRow(results))
-	{
-		SQL_FetchString(results, 0, Top10Name[i], MAX_NAME_LENGTH);
-		Top10Score[i] = SQL_FetchInt(results, 1);
-		i++;
 	}
 }
